@@ -18,6 +18,8 @@ class Form extends React.Component {
       onSaveButtonClick,
     } = this.props;
 
+    console.log(hasTrunfo);
+
     return (
       <form>
         <label htmlFor="cardName">
@@ -99,11 +101,11 @@ class Form extends React.Component {
           </select>
         </label>
         {' '}
-        <label htmlFor="trunfo">
+        <label htmlFor="cardTrunfo">
           Super Trunfo
           <input
             checked={ cardTrunfo }
-            name="trunfo"
+            name="cardTrunfo"
             type="checkbox"
             data-testid="trunfo-input"
             onChange={ onInputChange }
