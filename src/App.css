@@ -1,10 +1,10 @@
 form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
 }
 
 form label {
-    padding: 5px;
-    margin: 5px;
+  margin: 5px;
+  padding: 5px;
 }

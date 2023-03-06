@@ -24,6 +24,8 @@ class App extends React.Component {
     });
   };
 
+  // Colocar todos os estatos para importar, caso contrario nao da certo
+
   render() {
     const { cardName,
       cardDescription,
