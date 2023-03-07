@@ -11,7 +11,7 @@ class App extends React.Component {
     cardAttr2: '',
     cardAttr3: '',
     cardImage: '',
-    cardRare: '',
+    cardRare: 'normal',
     cardTrunfo: false,
   };
 
@@ -34,7 +34,23 @@ class App extends React.Component {
       cardAttr3,
       cardImage,
       cardRare,
-      cardTrunfo } = this.state;
+      cardTrunfo,
+    } = this.state;
+
+    const maxPower = 210;
+    const maxAttr = 90;
+
+    const isSaveButtonDisabled = cardName.length > 0
+    && cardDescription.length > 0
+    && cardImage.length > 0
+    && cardRare.length > 0
+    && Number(cardAttr1) <= maxAttr
+    && Number(cardAttr2) <= maxAttr
+    && Number(cardAttr3) <= maxAttr
+    && Number(cardAttr1) >= 0
+    && Number(cardAttr2) >= 0
+    && Number(cardAttr3) >= 0
+    && Number(cardAttr1) + Number(cardAttr2) + Number(cardAttr3) <= maxPower;
     return (
       <div>
         <h1>Tryunfo </h1>
@@ -48,6 +64,7 @@ class App extends React.Component {
           cardRare={ cardRare }
           cardTrunfo={ cardTrunfo }
           onInputChange={ this.onInputChange }
+          isSaveButtonDisabled={ !isSaveButtonDisabled }
         />
         <Card
           cardName={ cardName }
