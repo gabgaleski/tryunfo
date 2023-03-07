@@ -71,10 +71,12 @@ class App extends React.Component {
       cardImage,
       cardRare,
       cardTrunfo,
+      cardList,
     } = this.state;
 
     const maxPower = 210;
     const maxAttr = 90;
+    const hasTrunfo = cardList.some((card) => card.cardTrunfo === true);
 
     const isSaveButtonDisabled = cardName.length > 0
     && cardDescription.length > 0
@@ -102,6 +104,7 @@ class App extends React.Component {
           onInputChange={ this.onInputChange }
           isSaveButtonDisabled={ !isSaveButtonDisabled }
           onSaveButtonClick={ this.onSaveButtonClick }
+          hasTrunfo={ hasTrunfo }
         />
         <Card
           cardName={ cardName }
