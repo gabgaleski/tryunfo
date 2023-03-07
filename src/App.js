@@ -117,6 +117,23 @@ class App extends React.Component {
           cardTrunfo={ cardTrunfo }
           onInputChange={ this.onInputChange }
         />
+        <div className="cardList">
+          {cardList.map((card, index) => (
+            <div key={ index }>
+              <h3>{card.cardName}</h3>
+              <p>{card.cardDescription}</p>
+              <h6>{card.cardAttr1}</h6>
+              <h6>{card.cardAttr2}</h6>
+              <h6>{card.cardAttr3}</h6>
+              <img src={ card.cardImage } alt={ card.cardName } />
+              <h5>
+                Raridade:
+                {card.cardRare}
+              </h5>
+              {card.cardTrunfo && <p>SUPER TRUNFO</p>}
+            </div>
+          ))}
+        </div>
       </div>
     );
   }
