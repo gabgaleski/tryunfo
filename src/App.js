@@ -48,7 +48,7 @@ class App extends React.Component {
     };
 
     this.setState((previousState) => ({
-      cardList: [cardAdd, ...previousState.cardList],
+      cardList: [...previousState.cardList, cardAdd],
       cardName: '',
       cardDescription: '',
       cardAttr1: 0,
@@ -57,6 +57,12 @@ class App extends React.Component {
       cardImage: '',
       cardRare: 'normal',
       cardTrunfo: false,
+    }));
+  };
+
+  removeCardBtn = (i) => {
+    this.setState((previousState) => ({
+      cardList: previousState.cardList.filter((card, cardIndex) => cardIndex !== i),
     }));
   };
 
@@ -133,6 +139,13 @@ class App extends React.Component {
                 {card.cardRare}
               </h5>
               {card.cardTrunfo && <p>SUPER TRUNFO</p>}
+              <button
+                data-testid="delete-button"
+                onClick={ () => this.removeCardBtn(index) }
+              >
+                Excluir
+
+              </button>
             </div>
           ))}
         </div>
