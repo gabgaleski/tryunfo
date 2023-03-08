@@ -129,7 +129,7 @@ class App extends React.Component {
         <div className="cardList">
           <Filters
             cardList={ cardList }
-            removeCardBtn={ () => this.removeCardBtn(index) }
+            removeCardBtn={ this.removeCardBtn }
           />
         </div>
       </div>
