@@ -8,3 +8,8 @@ form label {
   margin: 5px;
   padding: 5px;
 }
+
+.form-card-container {
+  display: flex;
+  justify-content: space-around;
+}
