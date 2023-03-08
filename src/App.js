@@ -1,6 +1,7 @@
 import React from 'react';
 import Form from './components/Form';
 import Card from './components/Card';
+import Filters from './components/Filters';
 import './App.css';
 
 class App extends React.Component {
@@ -60,9 +61,9 @@ class App extends React.Component {
     }));
   };
 
-  removeCardBtn = (i) => {
+  removeCardBtn = (index) => {
     this.setState((previousState) => ({
-      cardList: previousState.cardList.filter((card, cardIndex) => cardIndex !== i),
+      cardList: previousState.cardList.filter((_card, cardIndex) => cardIndex !== index),
     }));
   };
 
@@ -126,28 +127,10 @@ class App extends React.Component {
           />
         </div>
         <div className="cardList">
-          {cardList.map((card, index) => (
-            <div key={ index }>
-              <h3>{card.cardName}</h3>
-              <p>{card.cardDescription}</p>
-              <h6>{card.cardAttr1}</h6>
-              <h6>{card.cardAttr2}</h6>
-              <h6>{card.cardAttr3}</h6>
-              <img src={ card.cardImage } alt={ card.cardName } />
-              <h5>
-                Raridade:
-                {card.cardRare}
-              </h5>
-              {card.cardTrunfo && <p>SUPER TRUNFO</p>}
-              <button
-                data-testid="delete-button"
-                onClick={ () => this.removeCardBtn(index) }
-              >
-                Excluir
-
-              </button>
-            </div>
-          ))}
+          <Filters
+            cardList={ cardList }
+            removeCardBtn={ () => this.removeCardBtn(index) }
+          />
         </div>
       </div>
     );
