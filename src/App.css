@@ -1,7 +1,8 @@
 form {
-  align-items: center;
+  align-items: flex-start;
   display: flex;
   flex-direction: column;
+  width: 450px;
 }
 
 form label {
@@ -37,4 +38,174 @@ h1 {
   font-weight: 800;
   line-height: 29px;
   text-transform: uppercase;
+}
+
+.name-form {
+  align-items: flex-start;
+  color: #3d495c;
+  display: flex;
+  flex-direction: column;
+  font-family: monospace;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
+}
+
+.name-form input {
+  font-size: 18px;
+  height: 25px;
+  width: 325px;
+}
+
+.form-description {
+  align-items: flex-start;
+  color: #3d495c;
+  display: flex;
+  flex-direction: column;
+  font-family: monospace;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
+}
+
+.form-description textarea {
+  font-size: 18px;
+  height: 50px;
+  resize: none;
+  width: 325px;
+}
+
+.atrib-one {
+  align-items: center;
+  color: #3d495c;
+  display: flex;
+  font-family: monospace;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
+}
+
+.atrib-one input {
+  height: 25px;
+  margin-left: 15px;
+  width: 250px;
+}
+
+.atrib-two {
+  align-items: center;
+  color: #3d495c;
+  display: flex;
+  font-family: monospace;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
+}
+
+.atrib-two input {
+  height: 25px;
+  margin-left: 15px;
+  width: 250px;
+}
+
+.atrib-three {
+  align-items: center;
+  color: #3d495c;
+  display: flex;
+  font-family: monospace;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
+}
+
+.atrib-three input {
+  height: 25px;
+  margin-left: 15px;
+  width: 250px;
+}
+
+.form-image {
+  align-items: center;
+  color: #3d495c;
+  display: flex;
+  font-family: monospace;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
+}
+
+.form-image input {
+  height: 25px;
+  margin-left: 15px;
+  width: 200px;
+}
+
+.form-rare {
+  align-items: flex-start;
+  color: #3d495c;
+  display: flex;
+  flex-direction: column;
+  font-family: monospace;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
+}
+
+.form-rare select {
+  font-size: 18px;
+  height: 30px;
+  resize: none;
+  width: 325px;
+}
+
+.form-end {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px;
+  width: 325px;
+}
+
+.form-trunfo {
+  align-items: center;
+  color: #3d495c;
+  display: flex;
+  font-family: monospace;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
+}
+
+.form-btn {
+  background: #2fc18c;
+  border-radius: 10px;
+  color: white;
+  font-size: 19px;
+  height: 40px;
+  width: 100px;
+}
+
+.span-trunfo {
+  font-size: 12px;
+}
+
+.div-card {
+  align-items: center;
+  display: flex;
+}
+
+.main-card {
+  background: white;
+  border-radius: 9.73px;
+  box-shadow: 0 3.89px 18.49px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+  height: 550px;
+  width: 320px;
 }
