@@ -97,7 +97,7 @@ class App extends React.Component {
     && Number(cardAttr3) >= 0
     && Number(cardAttr1) + Number(cardAttr2) + Number(cardAttr3) <= maxPower;
     return (
-      <div>
+      <div className="main-container">
         <h1>Tryunfo </h1>
         <div className="form-card-container">
           <Form

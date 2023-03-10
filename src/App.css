@@ -9,7 +9,32 @@ form label {
   padding: 5px;
 }
 
+.main-container {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
 .form-card-container {
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0 4px 19px rgba(0, 0, 0, 0.8);
   display: flex;
   justify-content: space-around;
+  width: 1000px;
+}
+
+h1 {
+  text-align: center;
+  transform: rotate(-6.01deg);
+}
+
+.form-title {
+  color: #2fc18c;
+  font-family: monospace;
+  font-size: 28px;
+  font-style: italic;
+  font-weight: 800;
+  line-height: 29px;
+  text-transform: uppercase;
 }
