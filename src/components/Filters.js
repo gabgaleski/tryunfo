@@ -204,9 +204,11 @@ class Filters extends React.Component {
             checked={ checkboxTrunfo }
           />
         </label>
-        {!checkboxTrunfo && filterRare === 'todas' && nameFilter}
-        {!checkboxTrunfo && filterRare !== 'todas' && typeFilter}
-        {checkboxTrunfo && trunfoFilter }
+        <div className="list-all">
+          {!checkboxTrunfo && filterRare === 'todas' && nameFilter}
+          {!checkboxTrunfo && filterRare !== 'todas' && typeFilter}
+          {checkboxTrunfo && trunfoFilter }
+        </div>
       </div>
     );
   }

@@ -356,3 +356,12 @@ h1 {
   background-color: rgba(255, 0, 0, 0.863);
   font-size: 15px;
 }
+
+.list-all {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.list-all div {
+  margin: 5px;
+}
