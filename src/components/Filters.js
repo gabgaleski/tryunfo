@@ -33,70 +33,139 @@ class Filters extends React.Component {
 
     const nameFilter = cardListFilter.map((card, index) => (
       <div key={ card.cardName }>
-        <h3>{card.cardName}</h3>
-        <p>{card.cardDescription}</p>
-        <h6>{card.cardAttr1}</h6>
-        <h6>{card.cardAttr2}</h6>
-        <h6>{card.cardAttr3}</h6>
-        <img src={ card.cardImage } alt={ card.cardName } />
-        <h5>
-          Raridade:
-          {card.cardRare}
-        </h5>
-        {card.cardTrunfo && <p>SUPER TRUNFO</p>}
-        <button
-          data-testid="delete-button"
-          onClick={ () => removeCardBtn(index) }
-        >
-          Excluir
+        <section className="main-card">
+          <div className="background-card">
+            <h3 data-testid="name-card">{card.cardName}</h3>
+            <img
+              data-testid="image-card"
+              src={ card.cardImage }
+              alt={ card.cardName }
+            />
+            <p
+              className="card-description"
+              data-testid="description-card"
+            >
+              {card.cardDescription}
+            </p>
+            <div className="attr1">
+              <span>Força</span>
+              <p data-testid="attr1-card">{card.cardAttr1}</p>
+            </div>
+            <div className="attr2">
+              <span>Agilidade</span>
+              <p data-testid="attr2-card">{card.cardAttr2}</p>
+            </div>
+            <div className="attr3">
+              <span>Constituição</span>
+              <p data-testid="attr3-card">{card.cardAttr3}</p>
+            </div>
+            <div className="type-div">
+              <h6 data-testid="rare-card">{card.cardRare}</h6>
+              {card.cardTrunfo && <h5 data-testid="trunfo-card">Super Trunfo</h5>}
+            </div>
+            <button
+              className="btn-delet"
+              data-testid="delete-button"
+              onClick={ () => removeCardBtn(index) }
+            >
+              Excluir
 
-        </button>
+            </button>
+          </div>
+        </section>
+
       </div>
     ));
 
     const typeFilter = cardFilterType.map((card, index) => (
       <div key={ card.cardName }>
-        <h3>{card.cardName}</h3>
-        <p>{card.cardDescription}</p>
-        <h6>{card.cardAttr1}</h6>
-        <h6>{card.cardAttr2}</h6>
-        <h6>{card.cardAttr3}</h6>
-        <img src={ card.cardImage } alt={ card.cardName } />
-        <h5>
-          Raridade:
-          {card.cardRare}
-        </h5>
-        {card.cardTrunfo && <p>SUPER TRUNFO</p>}
-        <button
-          data-testid="delete-button"
-          onClick={ () => removeCardBtn(index) }
-        >
-          Excluir
+        <section className="main-card">
+          <div className="background-card">
+            <h3 data-testid="name-card">{card.cardName}</h3>
+            <img
+              data-testid="image-card"
+              src={ card.cardImage }
+              alt={ card.cardName }
+            />
+            <p
+              className="card-description"
+              data-testid="description-card"
+            >
+              {card.cardDescription}
+            </p>
+            <div className="attr1">
+              <span>Força</span>
+              <p data-testid="attr1-card">{card.cardAttr1}</p>
+            </div>
+            <div className="attr2">
+              <span>Agilidade</span>
+              <p data-testid="attr2-card">{card.cardAttr2}</p>
+            </div>
+            <div className="attr3">
+              <span>Constituição</span>
+              <p data-testid="attr3-card">{card.cardAttr3}</p>
+            </div>
+            <div className="type-div">
+              <h6 data-testid="rare-card">{card.cardRare}</h6>
+              {card.cardTrunfo && <h5 data-testid="trunfo-card">Super Trunfo</h5>}
+            </div>
+            <button
+              className="btn-delet"
+              data-testid="delete-button"
+              onClick={ () => removeCardBtn(index) }
+            >
+              Excluir
 
-        </button>
+            </button>
+          </div>
+        </section>
+
       </div>
     ));
 
     const trunfoFilter = trunfoCard.map((card, index) => (
       <div key={ card.cardName }>
-        <h3>{card.cardName}</h3>
-        <p>{card.cardDescription}</p>
-        <h6>{card.cardAttr1}</h6>
-        <h6>{card.cardAttr2}</h6>
-        <h6>{card.cardAttr3}</h6>
-        <img src={ card.cardImage } alt={ card.cardName } />
-        <h5>
-          Raridade:
-          {card.cardRare}
-        </h5>
-        {card.cardTrunfo && <p>SUPER TRUNFO</p>}
-        <button
-          data-testid="delete-button"
-          onClick={ () => removeCardBtn(index) }
-        >
-          Excluir
+        <section className="main-card">
+          <div className="background-card">
+            <h3 data-testid="name-card">{card.cardName}</h3>
+            <img
+              data-testid="image-card"
+              src={ card.cardImage }
+              alt={ card.cardName }
+            />
+            <p
+              className="card-description"
+              data-testid="description-card"
+            >
+              {card.cardDescription}
+            </p>
+            <div className="attr1">
+              <span>Força</span>
+              <p data-testid="attr1-card">{card.cardAttr1}</p>
+            </div>
+            <div className="attr2">
+              <span>Agilidade</span>
+              <p data-testid="attr2-card">{card.cardAttr2}</p>
+            </div>
+            <div className="attr3">
+              <span>Constituição</span>
+              <p data-testid="attr3-card">{card.cardAttr3}</p>
+            </div>
+            <div className="type-div">
+              <h6 data-testid="rare-card">{card.cardRare}</h6>
+              {card.cardTrunfo && <h5 data-testid="trunfo-card">Super Trunfo</h5>}
+            </div>
+            <button
+              className="btn-delet"
+              data-testid="delete-button"
+              onClick={ () => removeCardBtn(index) }
+            >
+              Excluir
 
-        </button>
+            </button>
+          </div>
+        </section>
+
       </div>
     ));
 

@@ -209,3 +209,150 @@ h1 {
   height: 550px;
   width: 320px;
 }
+
+.background-card {
+  background: #036b52;
+  border-radius: 9.732px;
+  display: flex;
+  flex-direction: column;
+  height: 550px;
+  margin: 10px;
+}
+
+.background-card h3 {
+  background: #023031;
+  border-radius: 9.73px 9.73px 0 0;
+  color: white;
+  font-family: monospace;
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 550;
+  height: 28px;
+  line-height: 28px;
+  margin: 26px 0 0;
+  padding-bottom: 3px;
+  text-align: end;
+  width: 300px;
+}
+
+.background-card img {
+  height: 230px;
+  width: 300px;
+}
+
+.card-description {
+  color: white;
+  font-size: 12px;
+  height: 65px;
+  text-align: justify;
+}
+
+.attr1 {
+  align-items: center;
+  background: #f0f2f5;
+  border-radius: 9.73px;
+  display: flex;
+  height: 25px;
+  justify-content: space-between;
+  margin-bottom: 5px;
+  margin-right: 6px;
+  text-align: center;
+}
+
+.attr1 span {
+  margin-left: 5px;
+}
+
+.attr1 p {
+  background: #023031;
+  border-radius: 0 9.73px 9.73px 0;
+  color: white;
+  font-size: 15px;
+  height: 25px;
+  margin: 0;
+  text-align: center;
+  width: 30px;
+}
+
+.attr2 {
+  align-items: center;
+  background: #f0f2f5;
+  border-radius: 9.73px;
+  display: flex;
+  height: 25px;
+  justify-content: space-between;
+  margin-bottom: 5px;
+  margin-right: 6px;
+  text-align: center;
+}
+
+.attr2 span {
+  margin-left: 5px;
+}
+
+.attr2 p {
+  background: #023031;
+  border-radius: 0 9.73px 9.73px 0;
+  color: white;
+  font-size: 15px;
+  height: 25px;
+  margin: 0;
+  text-align: center;
+  width: 30px;
+}
+
+.attr3 {
+  align-items: center;
+  background: #f0f2f5;
+  border-radius: 9.73px;
+  display: flex;
+  height: 25px;
+  justify-content: space-between;
+  margin-bottom: 5px;
+  margin-right: 6px;
+  text-align: center;
+}
+
+.attr3 span {
+  margin-left: 5px;
+}
+
+.attr3 p {
+  background: #023031;
+  border-radius: 0 9.73px 9.73px 0;
+  color: white;
+  font-size: 15px;
+  height: 25px;
+  margin: 0;
+  text-align: center;
+  width: 30px;
+}
+
+.type-div {
+  align-items: center;
+  color: white;
+  display: flex;
+  height: 40px;
+  justify-content: space-around;
+}
+
+.type-div span {
+  font-size: 15px;
+}
+
+.type-div h6 {
+  font-family: monospace;
+  font-size: 16px;
+}
+
+.type-div h5 {
+  background-color: #22c7ca;
+  border-radius: 10px;
+  font-family: monospace;
+  font-size: 20px;
+}
+
+.btn-delet {
+  background-color: rgba(255, 0, 0, 0.863);
+  font-size: 15px;
+}
