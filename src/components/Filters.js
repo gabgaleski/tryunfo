@@ -171,39 +171,43 @@ class Filters extends React.Component {
 
     return (
       <div>
-        <input
-          data-testid="name-filter"
-          type="text"
-          placeholder="Filtrar por nome:"
-          name="filterName"
-          onChange={ this.handleSearchChange }
-          value={ filterName }
-          disabled={ checkboxTrunfo }
-        />
-        <select
-          data-testid="rare-filter"
-          onChange={ this.handleSearchChange }
-          name="filterRare"
-          value={ filterRare }
-          disabled={ checkboxTrunfo }
-        >
-          <option value="todas">todas</option>
-          <option value="normal">normal</option>
-          <option value="raro">raro</option>
-          <option value="muito raro">muito raro</option>
-        </select>
-        <label
-          htmlFor="checkboxTrunfo"
-        >
-          Super Trunfo
+        <div className="filters-input">
+          <h3>Filtros de Busca: </h3>
           <input
-            type="checkbox"
-            data-testid="trunfo-filter"
-            name="checkboxTrunfo"
+            className="filter-name"
+            data-testid="name-filter"
+            type="text"
+            placeholder="Filtrar por nome:"
+            name="filterName"
             onChange={ this.handleSearchChange }
-            checked={ checkboxTrunfo }
+            value={ filterName }
+            disabled={ checkboxTrunfo }
           />
-        </label>
+          <select
+            data-testid="rare-filter"
+            onChange={ this.handleSearchChange }
+            name="filterRare"
+            value={ filterRare }
+            disabled={ checkboxTrunfo }
+          >
+            <option value="todas">todas</option>
+            <option value="normal">normal</option>
+            <option value="raro">raro</option>
+            <option value="muito raro">muito raro</option>
+          </select>
+          <label
+            htmlFor="checkboxTrunfo"
+          >
+            Super Trunfo
+            <input
+              type="checkbox"
+              data-testid="trunfo-filter"
+              name="checkboxTrunfo"
+              onChange={ this.handleSearchChange }
+              checked={ checkboxTrunfo }
+            />
+          </label>
+        </div>
         <div className="list-all">
           {!checkboxTrunfo && filterRare === 'todas' && nameFilter}
           {!checkboxTrunfo && filterRare !== 'todas' && typeFilter}

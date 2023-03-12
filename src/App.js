@@ -128,12 +128,10 @@ class App extends React.Component {
             />
           </div>
         </div>
-        <div className="cardList">
-          <Filters
-            cardList={ cardList }
-            removeCardBtn={ this.removeCardBtn }
-          />
-        </div>
+        <Filters
+          cardList={ cardList }
+          removeCardBtn={ this.removeCardBtn }
+        />
       </div>
     );
   }

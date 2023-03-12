@@ -5,6 +5,10 @@ form {
   width: 450px;
 }
 
+body {
+  background-color: gray;
+}
+
 form label {
   margin: 5px;
   padding: 5px;
@@ -207,6 +211,7 @@ h1 {
   display: flex;
   flex-direction: column;
   height: 550px;
+  margin: 0 7px 7px 0;
   width: 320px;
 }
 
@@ -334,6 +339,7 @@ h1 {
   display: flex;
   height: 40px;
   justify-content: space-around;
+  margin: 0;
 }
 
 .type-div span {
@@ -343,6 +349,7 @@ h1 {
 .type-div h6 {
   font-family: monospace;
   font-size: 16px;
+  margin: 0;
 }
 
 .type-div h5 {
@@ -357,11 +364,26 @@ h1 {
   font-size: 15px;
 }
 
+.filters-input {
+  align-items: center;
+  background: #036b52;
+  border-radius: 10px;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 15px;
+  width: 1000px;
+}
+
+.filter-name {
+  height: 26px;
+  width: 270px;
+}
+
 .list-all {
   display: flex;
   flex-wrap: wrap;
-}
-
-.list-all div {
-  margin: 5px;
+  margin-top: 10px;
+  max-width: 1000px;
 }
