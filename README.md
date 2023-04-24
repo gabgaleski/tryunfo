@@ -2,15 +2,7 @@
 
 <br>
 
-# :camera_flash: Imagens do Projeto
-
-<details>
-  <summary><strong>Imagens</strong></summary><br />
-  
-  <img width="900" alt="Imagem pagina de login" src="./imagesReadme/pageLogin.png">
-  <img width="900" alt="Imagem pagina wallet" src="./imagesReadme/pageWallet.png">
-
-</details>
+ <img width="700" alt="Imagem pagina wallet" src="./images/game.png">
 
 <br>
 
@@ -31,5 +23,5 @@ O projeto tem como objetivo simular a criação de um baralho de Super Trunfo, o
 
 # :scroll: Nota
 
- <img width="700" alt="Imagem pagina wallet" src="./imagesReadme/nota.png">
+ <img width="700" alt="Imagem pagina wallet" src="./images/nota.png">
  
